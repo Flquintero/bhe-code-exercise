@@ -1,5 +1,8 @@
 # dependencies
 /node_modules
 
+# rc files
+.npmrc
+
 # misc
 .DS_Store

@@ -1,8 +1,11 @@
 {
   "name": "nth-prime-retriever",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "author": "Francisco Quintero <flquintero1@gmail.com>",
-  "description": "Gets the nth position in a collection of primes",
+  "description": "Gets the nth prime number in a collection of primes",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "scripts": {
     "test": "jest"
   },
