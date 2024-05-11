@@ -4,7 +4,7 @@
   "author": "Francisco Quintero <flquintero1@gmail.com>",
   "description": "Gets the nth prime number in a collection of primes",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "flquintero:registry": "https://npm.pkg.github.com"
   },
   "repository": {
     "type": "git",
