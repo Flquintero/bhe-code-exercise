@@ -1,3 +1,5 @@
+import { describe, expect, test } from "@jest/globals";
+
 const Sieve = require("./sieve");
 
 describe("Sieve", () => {
