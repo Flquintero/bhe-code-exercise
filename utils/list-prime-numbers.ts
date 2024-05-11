@@ -1,32 +1,25 @@
-const listPrimeNumbers = (): number[] => {
-  const limit = 100000000;
-  const sieve: boolean[] = new Array(limit + 1).fill(true);
-  sieve[0] = sieve[1] = false; // 0 and 1 are not prime numbers
+export const listPrimeNumbers = (targetLimit: number): number[] => {
+  const trackingArray: boolean[] = [],
+    upperLimit = Math.sqrt(targetLimit),
+    primesList: number[] = [];
 
-  // Start from the first prime number, which is 2
-  for (let number = 2; number * number <= limit; number++) {
-    if (sieve[number]) {
-      // Check if the number is still marked as a prime
-      // Mark all multiples of this number as non-prime
-      for (
-        let multiple = number * number;
-        multiple <= limit;
-        multiple += number
-      ) {
-        sieve[multiple] = false;
+  for (let i = 0; i < targetLimit; i++) {
+    trackingArray.push(true);
+  }
+
+  for (let i = 2; i <= upperLimit; i++) {
+    if (trackingArray[i]) {
+      for (var j = i * i; j < targetLimit; j += i) {
+        trackingArray[j] = false;
       }
     }
   }
 
-  // Extract the prime numbers
-  const primes: number[] = [];
-  for (let i = 2; i <= limit; i++) {
-    if (sieve[i]) {
-      primes.push(i);
+  for (let i = 2; i < targetLimit; i++) {
+    if (trackingArray[i]) {
+      primesList.push(i);
     }
   }
 
-  return primes;
+  return primesList;
 };
-
-module.exports = listPrimeNumbers;
