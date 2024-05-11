@@ -1,3 +1,3 @@
-const Sieve = require("./utils/Sieve/sieve");
+const NthPrimeModule = require('./nth-prime/nth-prime');
 
-module.exports = Sieve;
+module.exports = NthPrimeModule;
