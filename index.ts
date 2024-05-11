@@ -1,1 +1,1 @@
-export const NthPrimeModule = require('./src/lib/nth-prime');
+export const { getNthPrime } = require('./src/lib/nth-prime/nth-prime');
