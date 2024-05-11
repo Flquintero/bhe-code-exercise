@@ -1,0 +1,12 @@
+{
+  "name": "nth-prime-retriever",
+  "version": "0.0.1",
+  "author": "Francisco Quintero <flquintero1@gmail.com>",
+  "description": "Gets the nth position in a collection of primes",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
