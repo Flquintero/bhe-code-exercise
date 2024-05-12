@@ -1,26 +1,19 @@
-# BHE Software Engineer Coding Exercise
+# Nth Prime Retriever
 
-## The Sieve of Eratosthenes
+## NPM Package
 
-Prime numbers have many modern day applications and a long history in mathematics. Utilizing your own resources research the sieve of Eratosthenes, an algorithm for generating prime numbers. Based on your research, implement an API that allows the caller to retrieve the Nth prime number.
-Some stub code and a test suite have been provided as a convenience, however, you are encouraged to deviate from Eratosthenes's algorithm, modify the existing functions/methods or anything else that might showcase your ability provided the following requirements are satisfied.
-Stub code has been provided in Go, C#, and Javascript. Please use the language that is most appropriate based on your own skillset
+This is an npm package that when installed into a project exposed a function that takes in an nth position and return the prime number in that position of a list of primes.
 
-### Requirements
+Link to Package: https://www.npmjs.com/package/nth-prime-retriever
 
-- Fork this repo to implement your solution
-- The library package provides an API for retrieving the Nth prime number using 0-based indexing where the 0th prime number is 2
-- Interviewers must be able to execute a suite of tests
-  - Go: `go test ./...`
-  - C#: `dotnet test Sieve.Tests`
-  - Javascript: `npm run test`
-- Your solution is committed to your project's `main` branch, no uncommitted changes or untracked files please
-- Submit the link to your public fork for review
+### Live Demo
 
-### Considerations
+If you want to see it working in a project go to: https://get-nth-prime-form.vercel.app/
 
-During the technical interview, your submission will be discussed, and you will be evaluated in the following areas:
+### Implementation Example
 
-- Technical ability
-- Communication skills
-- Work habits and complementary skills
+If you want an example of how to implement check out: https://github.com/Flquintero/get-nth-prime-form
+
+### Test
+
+To test run ### npm run test
