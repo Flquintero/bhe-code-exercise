@@ -1,6 +1,6 @@
 {
   "name": "nth-prime-retriever",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "author": "Francisco Quintero <flquintero1@gmail.com>",
   "description": "Gets the nth prime number in a collection of primes",
   "publishConfig": {
@@ -10,8 +10,16 @@
     "type": "git",
     "url": "git+https://github.com/Flquintero/bhe-code-exercise.git"
   },
+  "main": "./lib/cjs/index.js",
+  "module": "./lib/esm/index.js",
+  "files": [
+    "lib/"
+  ],
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "tsc-esm": "tsc -p tsconfig.json",
+    "tsc-cjs": "tsc -p tsconfig-cjs.json",
+    "prepublishOnly": "npm run tsc-esm && npm run tsc-cjs"
   },
   "devDependencies": {
     "@jest/globals": "^29.7.0",
