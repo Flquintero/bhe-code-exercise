@@ -7,7 +7,7 @@ export const getNthPrime = (targetNumber: number): number => {
     checkForAboveMemoryLimit(targetNumber);
     const primeListLimit: number = generateListLimit(targetNumber);
     return listPrimeNumbers(primeListLimit)[targetNumber];
-  } catch (err: any) {
-    throw new Error(err.messsage);
+  } catch (error: any) {
+    throw new Error(error);
   }
 };
