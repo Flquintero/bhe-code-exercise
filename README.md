@@ -16,4 +16,6 @@ If you want an example of how to implement check out: https://github.com/Flquint
 
 ### Test
 
-To test run ### npm run test
+To test run:
+
+### `npm run test`
