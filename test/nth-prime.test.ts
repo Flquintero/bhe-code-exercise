@@ -9,5 +9,8 @@ describe('NthPrime', () => {
     expect(getNthPrime(986)).toBe(7793);
     expect(getNthPrime(2000)).toBe(17393);
     expect(getNthPrime(1000000)).toBe(15485867);
+    expect(() => {
+      getNthPrime(1000001);
+    }).toThrow();
   });
 });
