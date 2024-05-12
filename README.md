@@ -2,7 +2,7 @@
 
 ## NPM Package
 
-This is an npm package that when installed into a project exposed a function that takes in an nth position and return the prime number in that position of a list of primes.
+This is an npm package that when installed into a project exposes a function that takes in an nth position and returns the prime number in that position of a list of primes.
 
 Link to Package: https://www.npmjs.com/package/nth-prime-retriever
 
