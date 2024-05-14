@@ -14,7 +14,13 @@ If you want to see it working in a project go to: https://get-nth-prime-form.ver
 
 If you want an example of how to implement check out: https://github.com/Flquintero/get-nth-prime-form
 
-### Test
+### Installing Dependancies
+
+After cloning don't forget to run:
+
+### `npm install`
+
+### Tests
 
 To test run:
 
