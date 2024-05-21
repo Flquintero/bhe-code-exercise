@@ -1,1 +1,1 @@
-export declare const listPrimeNumbers: (targetLimit: number) => number[];
+export declare const listPrimeNumbers: (targetLimit: number, nthPosition: number) => number[];
